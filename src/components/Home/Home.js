@@ -23,19 +23,19 @@ export default function Home () {
     return (
         <div>
             <div className="main-container">
-                <img className="w-1/4 ml-auto mr-auto mt-20"  src="../autif_trans_crop.png" />
+                <img className="w-1/4 ml-auto mr-auto mt-20"  src="../assets/autif_trans_crop.png" />
                 <div className="tech-container">
-                    <h1 className="text-slate-50" onClick={() => {
+                    <h1 className="text-slate-50 text-3xl cursor-pointer" onClick={() => {
                         // dispatch(setTechModal());
                         dispatch(setHtml());
                     }}>HTML & CSS</h1>
-                    <h1 className="text-slate-50" onClick={() => dispatch(setTailwind())}>Tailwind</h1>
-                    <h1 className="text-slate-50" onClick={() => {
+                    <h1 className="text-slate-50 text-3xl cursor-pointer" onClick={() => dispatch(setTailwind())}>Tailwind</h1>
+                    <h1 className="text-slate-50 text-3xl cursor-pointer" onClick={() => {
                         dispatch(setJs());
                     }}>JavaScript</h1>
-                    <h1 className="text-slate-50" onClick={() => dispatch(setReact())}>React</h1>
-                    <h1 className="text-slate-50" onClick={() => dispatch(setNode())}>Node</h1>
-                    <h1 className="text-slate-50" onClick={() => dispatch(setPhp())}>WordPress & PHP</h1>
+                    <h1 className="text-slate-50 text-3xl cursor-pointer" onClick={() => dispatch(setReact())}>React</h1>
+                    <h1 className="text-slate-50 text-3xl cursor-pointer" onClick={() => dispatch(setNode())}>Node</h1>
+                    <h1 className="text-slate-50 text-3xl cursor-pointer" onClick={() => dispatch(setPhp())}>WordPress & PHP</h1>
                 </div>
                 {showTechModal && <TechModal />}
             </div>
