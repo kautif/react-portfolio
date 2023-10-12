@@ -6,7 +6,8 @@ const initialState = {
     showJs: false,
     showReact: false,
     showNode:  false,
-    showPhp: false
+    showPhp: false,
+    showTechModal: false
 }
 
 export const techSlice = createSlice({
@@ -15,57 +16,71 @@ export const techSlice = createSlice({
     reducers: {
         setHtml: (state) => {
             for (const property in initialState)  {
-                if (property == "showHtml") {
+                if (property === "showHtml") {
                     state.showHtml = true;
                 } else {
                     state[property] = false;
+                    state.showTechModal = true;
                 }
             }
         },
         setTailwind: (state) => {
             for (const property in initialState)  {
-                if (property == "showTailwind") {
+                if (property === "showTailwind") {
+                    // state.showTechModal = true;
                     state.showTailwind = true;
                 } else {
                     state[property] = false;
+                    state.showTechModal = true;
                 }
             }
         },
         setJs: (state) => {
             for (const property in initialState)  {
-                if (property == "showJs") {
+                if (property === "showJs") {
+                    // state.showTechModal = true;
                     state.showJs = true;
                 } else {
                     state[property] = false;
+                    state.showTechModal = true;
                 }
             }
         },
         setReact: (state) => {
             for (const property in initialState)  {
-                if (property == "showReact") {
+                if (property === "showReact") {
+                    // state.showTechModal = true;
                     state.showReact = true;
                 } else {
                     state[property] = false;
+                    state.showTechModal = true;
                 }
             }
         },
         setNode: (state) => {
             for (const property in initialState)  {
-                if (property == "showNode") {
+                if (property === "showNode") {
+                    // state.showTechModal = true;
                     state.showNode = true;
                 } else {
                     state[property] = false;
+                    state.showTechModal = true;
                 }
             }
         },
         setPhp: (state) => {
             for (const property in initialState)  {
-                if (property == "showPhp") {
+                if (property === "showPhp") {
+                    // state.showTechModal = true;
                     state.showPhp = true;
                 } else {
                     state[property] = false;
+                    state.showTechModal = true;
                 }
             }
+        },
+        setTechModal: (state) => {
+            state.showTechModal = !(state.showTechModal);
         }
     }
 })
@@ -76,6 +91,7 @@ export const {
     setJs,
     setReact,
     setNode,
-    setPhp
+    setPhp,
+    setTechModal
 } = techSlice.actions;
 export default techSlice.reducer;
