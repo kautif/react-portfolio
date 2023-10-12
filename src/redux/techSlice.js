@@ -15,55 +15,55 @@ export const techSlice = createSlice({
     reducers: {
         setHtml: (state) => {
             for (const property in initialState)  {
-                if (property == showHtml) {
+                if (property == "showHtml") {
                     state.showHtml = true;
                 } else {
-                    property = false;
+                    state[property] = false;
                 }
             }
         },
         setTailwind: (state) => {
             for (const property in initialState)  {
-                if (property == showTailwind) {
+                if (property == "showTailwind") {
                     state.showTailwind = true;
                 } else {
-                    property = false;
+                    state[property] = false;
                 }
             }
         },
         setJs: (state) => {
             for (const property in initialState)  {
-                if (property == showJs) {
+                if (property == "showJs") {
                     state.showJs = true;
                 } else {
-                    property = false;
+                    state[property] = false;
                 }
             }
         },
         setReact: (state) => {
             for (const property in initialState)  {
-                if (property == showReact) {
+                if (property == "showReact") {
                     state.showReact = true;
                 } else {
-                    property = false;
+                    state[property] = false;
                 }
             }
         },
         setNode: (state) => {
             for (const property in initialState)  {
-                if (property == showNode) {
+                if (property == "showNode") {
                     state.showNode = true;
                 } else {
-                    property = false;
+                    state[property] = false;
                 }
             }
         },
         setPhp: (state) => {
             for (const property in initialState)  {
-                if (property == showPhp) {
+                if (property == "showPhp") {
                     state.showPhp = true;
                 } else {
-                    property = false;
+                    state[property] = false;
                 }
             }
         }
@@ -78,4 +78,4 @@ export const {
     setNode,
     setPhp
 } = techSlice.actions;
-export default techSlice.reducere;
+export default techSlice.reducer;
