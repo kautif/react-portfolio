@@ -1,12 +1,19 @@
 .tech-modal {
     position: absolute;
     top: 40%;
-    left: 25%;
-    width: 50%;
+    left: 30%;
+    width: 100%;
 }
 
 .tech-modal__close {
     position: relative;
     top: -80%;
     right: -100%;
+}
+
+
+@media (min-width: 421px) and (max-width: 1023px) {
+    .tech-modal {
+        left: -15%
+    }
 }

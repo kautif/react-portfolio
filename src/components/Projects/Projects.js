@@ -6,6 +6,7 @@ export default function Projects () {
         <div className="flex flex-wrap justify-around">
             <div className="w-2/5">
                 <Project
+                    id="mealplanner"
                     projectTitle="Meal Planner"    
                     projectImgSrc="../assets/meal_planner_screenshot.png" 
                     projectLink="https://incandescent-swan-68d171.netlify.app/"
@@ -20,6 +21,7 @@ export default function Projects () {
             </div>
             <div className="w-2/5">
                 <Project
+                    id="sf2gameselector"
                     projectTitle="Street Fighter 2 Themed Weighted Game Selector"    
                     projectImgSrc="../assets/sf2_random_select_mockup.png" 
                     projectLink="https://sf2-weighted-rando-game-select.netlify.app/"
@@ -36,6 +38,7 @@ export default function Projects () {
             </div>
             <div className="w-2/5">
                 <Project
+                    id="fishybones"
                     projectTitle="Fishybones (Knucklebones Clone)"    
                     projectImgSrc="../assets/knucklebones_mockups.png" 
                     projectLink="https://fishybones.netlify.app/"
@@ -50,6 +53,7 @@ export default function Projects () {
             </div>
             <div className="w-2/5">
                 <Project
+                    id="todo"
                     projectTitle="Todo Application"    
                     projectImgSrc="../assets/react_redux_todos.png" 
                     projectLink="https://dashing-lolly-791779.netlify.app/"
@@ -65,6 +69,7 @@ export default function Projects () {
             </div>
             <div className="w-2/5">
                 <Project
+                    id="yugioh"
                     projectTitle="Yu-Gi-Oh Card Search"    
                     projectImgSrc="../assets/mockup_yugioh_card_search.png" 
                     projectLink="https://drive.google.com/file/d/15jZDUTpaW_swFENYLPe9Wj0TzDpQ9NQQ/view?usp=drive_link"
@@ -79,6 +84,7 @@ export default function Projects () {
             </div>
             <div className="w-2/5">
                 <Project
+                    id="icare"
                     projectTitle="iCare Pharmacy"    
                     projectImgSrc="../assets/all_sizes_icare_mockup_trans.png" 
                     projectLink="https://incandescent-swan-68d171.netlify.app/"
@@ -94,6 +100,7 @@ export default function Projects () {
             </div>
             <div className="w-2/5">
                 <Project
+                    id="simplynuc"
                     projectTitle="Simply NUC"    
                     projectImgSrc="../assets/all_sizes_simplynuc_mockup_trans.png" 
                     projectLink="https://www.simplynuc.com"
@@ -109,6 +116,7 @@ export default function Projects () {
             </div>
             <div className="w-2/5">
                 <Project
+                    id="sfquiz"
                     projectTitle="Street Fighter Quiz"    
                     projectImgSrc="../assets/mockup_sf.png" 
                     projectLink="https://www.kautif.com/sf_quiz"

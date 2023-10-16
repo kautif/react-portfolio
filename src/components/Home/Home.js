@@ -23,7 +23,7 @@ export default function Home () {
     return (
         <div>
             <div className="main-container">
-                <img className="w-1/4 ml-auto mr-auto mt-20"  src="../assets/autif_trans_crop.png" />
+                <img className="profile-pic ml-auto mr-auto mt-20"  src="../assets/autif_trans_crop.png" />
                 <div className="tech-container">
                     <h1 className="text-slate-50 text-3xl cursor-pointer" onClick={() => {
                         // dispatch(setTechModal());

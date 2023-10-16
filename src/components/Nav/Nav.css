@@ -1,0 +1,29 @@
+.navbar {
+    position: relative;
+}
+
+.navbar-mobile__close,
+.navbar-mobile__open {
+    display: none;
+}
+
+@media (max-width: 769px) {
+    .navbar {
+        flex-direction: column;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .navbar-mobile__open {
+        display: block;
+    }
+
+    .navbar-mobile__close {
+        display: block;
+        position: relative;
+        top: -85%;
+        left: 85%;
+    }
+}

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Project (props) {
     return (
-        <div>
+        <div id={props.id}>
             <h2 className="text-slate-50 text-center text-3xl mb-10 mt-10">{props.projectTitle}</h2>
             <img className="w-full" src={props.projectImgSrc} />
             <div className="flex justify-around mb-5">

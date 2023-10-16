@@ -1,6 +1,7 @@
 .main-container {
-    position: relative;
-    overflow-y: hidden;
+    position: absolute;
+    left: 25%;
+    /* overflow-y: hidden; */
 }
 /* .tech-container {
     width: 600px;
@@ -14,14 +15,21 @@
     transform: rotate(0deg);
 } */
 
+.profile-pic {
+    position: relative;
+    left: 30%;
+    top: -40%;
+    width: 35%;
+}
+
 .tech-container {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     border: 2px solid #000;
     border-radius: 50%;
     position: absolute;
-    bottom: 15%;
-    left: 30%;
+    bottom: -25%;
+    left: 35%;
     animation: move 30s linear infinite;
     transform: rotate(0deg);
 }
@@ -32,6 +40,7 @@
     text-align: center;
     transform-origin: center;
     animation: rotate 30s linear infinite;
+    z-index: 1;
 }
 
 .tech-container h1:nth-child(1) {
@@ -89,22 +98,32 @@
     }
 }
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1800px) {
     .tech-container {
-        width: 700px;
-        height: 700px;
+        bottom: 10%;
     }
+} */
+
+@media (min-width: 1600px) and (max-width: 1799px) {
+    /* .tech-container {
+        bottom: 16%;
+        left: 34%;
+    } */
 
     .tech-container h1:nth-child(2) {
         left: 41%;
     }
 
+    .tech-container h1:nth-child(3) {
+        left: 44%;
+    }
+
     .tech-container h1:nth-child(4) {
-        top: 86%;   
+        top: 74%;   
     }
 
     .tech-container h1:nth-child(5) {
-        left: -46%;
+        left: -35%;
     }
 
     .tech-container h1:nth-child(6) {
@@ -112,44 +131,136 @@
     }
 }
 
-@media (min-width: 1400px) and (max-width: 1599px) {
-    .tech-container {
-        width: 600px;
-        height: 600px;
-    }
-}
-
 @media (min-width: 1200px) and (max-width: 1399px) {
-    .tech-container {
-        width: 500px;
-        height: 500px;
+    .main-container {
+        left: 15%;
     }
-}
 
-@media (max-width: 1024px) and (min-width: 769px) {
     .tech-container {
         width: 400px;
         height: 400px;
+        left: 43%;
+        bottom: 1%
     }
 }
 
-@media (max-width: 768px) and (min-width: 595px) {
+@media (max-width: 1199px) and (min-width: 1024px) {
+    .main-container {
+        left: 10%;
+    }
+
+    .profile-pic {
+        left: 25%;
+        bottom: 10%;
+    }
+
     .tech-container {
-        width: 300px;
-        height: 300px;
+        bottom: -20%;
+        left: 30%;
+        /* width: 400px;
+        height: 400px; */
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 769px) {
+    .profile-pic {
+        width: 20%;
+        left: -12%;
+        top: 15%
+    }
+
+    .tech-container {
+        bottom: -40%;
+        left: 10%;
+    }
+}
+@media (max-width: 768px) and (min-width: 595px) {
+    .profile-pic {
+        width: 24%;
+        left: -10%;
+        top: 0%
+    }
+    
+    .tech-container {
+        bottom: -20%;
+        left: 5%;
+    }
+
+    .tech-modal {
+        top: 14%;
+        left: 15%;
+        width: 64%;
     }
 }
 
 @media (max-width: 594px) and (min-width: 421px) {
+    .profile-pic {
+        width: 30%;
+        left: -10%;
+        top: 0%;
+    }
+
     .tech-container {
-        width: 200px;
-        height: 200px;
+        bottom: -20%;
+        left: -10%;
     }
 }
 
 @media (max-width: 420px) {
-    .tech-container {
+    /* .tech-container {
         width: 150px;
         height: 150px;
+        left: -20%;
+    } */
+}
+
+@media(min-width: 360px) and (max-width: 1024px) {    
+    .tech-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .tech-container h1 {
+        font-size: 1.25em;
+    }
+
+    .tech-container h1:nth-child(1) {
+        top: -3%;
+        left: 14%;
+    }
+
+    .tech-container h1:nth-child(2) {
+        top: 30%;
+    }
+
+    .tech-container h1:nth-child(3) {
+        left: 28%;
+    }
+
+    .tech-container h1:nth-child(4) {
+        top: 51%;
+        left: -17%;
+    }
+
+    .tech-container h1:nth-child(5) {
+        top: 10%;
+        left: -47%;
+    }
+
+    .tech-container h1:nth-child(6) {
+        top: -40%;
+        left: -34%;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 420px) {
+    .profile-pic {
+        width: 40%;
+        left: -10%;
+        top: 0;
+    }
+
+    .tech-container {
+        left: -10%;
     }
 }
