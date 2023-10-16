@@ -7,7 +7,6 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <img className="w-1/4 navbar-mobile__open" src="../assets/hamburger.png" alt="mobile menu open" />
       <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />

@@ -5,18 +5,28 @@ import $ from "jquery";
 import "./Nav.css";
 
 export default function Nav () {
-    $(".navbar-mobile__close").on("click", function () {
-        // $(".navbar").animate({direction: 'left'}, 1000);
-        $(".navbar").show("slide", {direction: 'left'}, 1000);
-    })
+    function closeNav () {
+        document.getElementById("navbar").classList.remove("navbar-reveal");
+        document.getElementById("navbar").classList.add("navbar-hide");
+    }
+
+    function openNav () {
+        document.getElementById("navbar").classList.remove("navbar-hide");
+        document.getElementById("navbar").classList.add("navbar-reveal");
+    }
 
     return (
-        <ul className="navbar flex justify-around bg-red-400 p-4">
-            <Link className="text-slate-50 text-3xl" to="/">Home</Link>
-            <Link className="text-slate-50 text-3xl" to="/projects">Projects</Link>
-            <Link className="text-slate-50 text-3xl" to="#">Resume</Link>
-            <Link className="text-slate-50 text-3xl" to="#">Contact</Link>
-            <span className="navbar-mobile__close text-6xl text-white">X</span>
-        </ul>
+        <div>
+            <div className="navbar-mobile__open-container" onClick={() => openNav()}>
+                <img className="w-1/8 navbar-mobile__open" src="../assets/hamburger.png" alt="mobile menu open" />
+            </div>
+            <ul id="navbar" className="navbar navbar-hide flex justify-around bg-red-400 p-4">
+                <Link className="text-slate-50 text-3xl" to="/">Home</Link>
+                <Link className="text-slate-50 text-3xl" to="/projects">Projects</Link>
+                <Link className="text-slate-50 text-3xl" to="#">Resume</Link>
+                <Link className="text-slate-50 text-3xl" to="#">Contact</Link>
+                <span id="navbar-mobile__close" className="navbar-mobile__close text-6xl text-white" onClick={() => closeNav()}>X</span>
+            </ul>
+        </div>
     )
 }

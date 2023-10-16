@@ -81,6 +81,9 @@ export const techSlice = createSlice({
         },
         setTechModal: (state) => {
             state.showTechModal = !(state.showTechModal);
+        },
+        openNav: (state) => {
+            
         }
     }
 })

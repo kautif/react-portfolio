@@ -16,6 +16,12 @@
         z-index: 1;
     }
 
+
+    .navbar-mobile__open-container {
+        position: relative;
+        display: inline;
+    }
+
     .navbar-mobile__open {
         display: block;
     }
@@ -26,4 +32,50 @@
         top: -85%;
         left: 85%;
     }
+
+    .navbar-reveal  {
+        animation: slide-in 0.5s forwards;
+        -webkit-animation: slide-in 0.5s forwards;
+    }
+      
+    .navbar-hide {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+    }
+
+    @keyframes slide-in {
+        0% {
+            -webkit-transform: translateX(-100%);
+        }
+        100% {
+            -webkit-transform: translateX(0%);
+        }
+    }
+
+    @-webkit-keyframes slide-in {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+    }
+
+    @keyframes slide-out {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      
+      @-webkit-keyframes slide-out {
+        0% {
+          -webkit-transform: translateX(0%);
+        }
+        100% {
+          -webkit-transform: translateX(-100%);
+        }
+      }
 }
