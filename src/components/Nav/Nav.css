@@ -20,6 +20,7 @@
     .navbar-mobile__open-container {
         position: relative;
         display: inline;
+        cursor: pointer;
     }
 
     .navbar-mobile__open {
@@ -31,6 +32,7 @@
         position: relative;
         top: -85%;
         left: 85%;
+        cursor: pointer;
     }
 
     .navbar-reveal  {

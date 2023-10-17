@@ -23,8 +23,8 @@ export default function Nav () {
             <ul id="navbar" className="navbar navbar-hide flex justify-around bg-red-400 p-4">
                 <Link className="text-slate-50 text-3xl" to="/">Home</Link>
                 <Link className="text-slate-50 text-3xl" to="/projects">Projects</Link>
-                <Link className="text-slate-50 text-3xl" to="#">Resume</Link>
-                <Link className="text-slate-50 text-3xl" to="#">Contact</Link>
+                <Link className="text-slate-50 text-3xl" target="_blank" to="https://docs.google.com/document/d/1O4eKqJPPB2A--5Jy1se2gzJVsH5t-mhQ-uaZ23rWlkk/edit?usp=sharing">Resume</Link>
+                <Link className="text-slate-50 text-3xl" to="mailto: kautif@gmail.com">Contact</Link>
                 <span id="navbar-mobile__close" className="navbar-mobile__close text-6xl text-white" onClick={() => closeNav()}>X</span>
             </ul>
         </div>

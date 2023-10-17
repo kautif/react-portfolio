@@ -1,10 +1,11 @@
 import React from "react";
 import Project from "../Project/Project";
+import "./Projects.css";
 
 export default function Projects () {
     return(
-        <div className="flex flex-wrap justify-around">
-            <div className="w-2/5">
+        <div className="flex flex-wrap justify-around projects-container">
+            <div className="w-2/5 project">
                 <Project
                     id="mealplanner"
                     projectTitle="Meal Planner"    
@@ -19,7 +20,7 @@ export default function Projects () {
                         <img className="w-16 h-16" src="../assets/react_icon.png" />
                     </div>
             </div>
-            <div className="w-2/5">
+            <div className="w-2/5 project">
                 <Project
                     id="sf2gameselector"
                     projectTitle="Street Fighter 2 Themed Weighted Game Selector"    
@@ -36,7 +37,7 @@ export default function Projects () {
                         <img className="w-16 h-16" src="../assets/node_icon.png" />
                     </div>
             </div>
-            <div className="w-2/5">
+            <div className="w-2/5 project">
                 <Project
                     id="fishybones"
                     projectTitle="Fishybones (Knucklebones Clone)"    
@@ -51,7 +52,7 @@ export default function Projects () {
                         <img className="w-16 h-16" src="../assets/react_icon.png" />
                     </div>
             </div>
-            <div className="w-2/5">
+            <div className="w-2/5 project">
                 <Project
                     id="todo"
                     projectTitle="Todo Application"    
@@ -67,7 +68,7 @@ export default function Projects () {
                         <img className="w-16 h-16" src="../assets/tailwind.png" />
                     </div>
             </div>
-            <div className="w-2/5">
+            <div className="w-2/5 project">
                 <Project
                     id="yugioh"
                     projectTitle="Yu-Gi-Oh Card Search"    
@@ -82,7 +83,7 @@ export default function Projects () {
                         <img className="w-16 h-16" src="../assets/react_icon.png" />
                     </div>
             </div>
-            <div className="w-2/5">
+            <div className="w-2/5 project">
                 <Project
                     id="icare"
                     projectTitle="iCare Pharmacy"    
@@ -98,7 +99,7 @@ export default function Projects () {
                         <img className="w-16 h-16" src="../assets/php_icon.png" />
                     </div>
             </div>
-            <div className="w-2/5">
+            <div className="w-2/5 project">
                 <Project
                     id="simplynuc"
                     projectTitle="Simply NUC"    
@@ -114,7 +115,7 @@ export default function Projects () {
                         <img className="w-16 h-16" src="../assets/php_icon.png" />
                     </div>
             </div>
-            <div className="w-2/5">
+            <div className="w-2/5 project">
                 <Project
                     id="sfquiz"
                     projectTitle="Street Fighter Quiz"    

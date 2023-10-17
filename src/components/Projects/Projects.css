@@ -1,0 +1,24 @@
+
+@media (min-width: 1024px) {
+    .project {
+        width: 30%;
+    }
+}
+
+@media (min-width: 595px) and (max-width: 1023px) {
+    .project {
+        width: 40%;
+    }
+}
+
+@media (max-width: 594px) {
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+}
