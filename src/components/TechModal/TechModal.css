@@ -17,3 +17,9 @@
         left: -15%
     }
 }
+
+@media (max-width: 420px) {
+    .tech-modal {
+        left: -15%;
+    }
+}

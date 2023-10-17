@@ -23,7 +23,13 @@ export default function Home () {
     return (
         <div>
             <div className="main-container">
-                <img className="profile-pic ml-auto mr-auto mt-20"  src="../assets/autif_trans_crop.png" />
+                <div className="intro-container">
+                    <img className="profile-pic ml-auto mr-auto mt-20"  src="../assets/autif_trans_crop.png" />
+                    <div className="intro__text text-2xl">
+                        <h2 className="text-white"><em>Frontend Developer</em></h2>
+                        <h3 className="text-white">Click on a technology</h3>
+                    </div>
+                </div>
                 <div className="tech-container">
                     <h1 className="text-slate-50 text-3xl cursor-pointer" onClick={() => {
                         // dispatch(setTechModal());

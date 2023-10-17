@@ -16,10 +16,21 @@
 } */
 
 .profile-pic {
+    /* position: relative;
+    left: 30%;
+    top: -40%; */
+    width: 35%;
+}
+
+.intro-container {
+    text-align: center;
     position: relative;
     left: 30%;
-    top: -40%;
-    width: 35%;
+}
+
+.intro__text {
+    position: relative;
+    top: 0px;
 }
 
 .tech-container {
@@ -28,7 +39,7 @@
     border: 2px solid #000;
     border-radius: 50%;
     position: absolute;
-    bottom: -25%;
+    bottom: -12%;
     left: 35%;
     animation: move 30s linear infinite;
     transform: rotate(0deg);
@@ -140,8 +151,12 @@
         width: 400px;
         height: 400px;
         left: 43%;
-        bottom: 1%
+        bottom: 5%
     }
+
+    .intro__text {
+        top: 20%;
+      }
 }
 
 @media (max-width: 1199px) and (min-width: 1024px) {
@@ -155,34 +170,44 @@
     }
 
     .tech-container {
-        bottom: -20%;
-        left: 30%;
-        /* width: 400px;
-        height: 400px; */
+        bottom: 24%;
+        left: 51%;
     }
 }
 
 @media (max-width: 1023px) and (min-width: 769px) {
+    /* .intro-container {
+        left: -12%
+    } */
+
+    .intro__text {
+        top: 45px;
+    }
+
     .profile-pic {
-        width: 20%;
-        left: -12%;
-        top: 15%
+        width: 23%;
     }
 
     .tech-container {
-        bottom: -40%;
+        bottom: 12%;
         left: 10%;
     }
 }
 @media (max-width: 768px) and (min-width: 595px) {
+    /* .intro-container {
+        left: -11%;
+    } */
+
+    .intro__text {
+        top: 60px;
+    }
+    
     .profile-pic {
         width: 24%;
-        left: -10%;
-        top: 0%
     }
     
     .tech-container {
-        bottom: -20%;
+        bottom: 6%;
         left: 5%;
     }
 
@@ -194,24 +219,28 @@
 }
 
 @media (max-width: 594px) and (min-width: 421px) {
+    /* .intro-container {
+        left: -12%;
+    } */
+
+    .intro__text {
+        top: 85px;
+    }
+
     .profile-pic {
         width: 30%;
-        left: -10%;
-        top: 0%;
     }
 
     .tech-container {
-        bottom: -20%;
+        bottom: 0%;
         left: -10%;
     }
 }
 
-@media (max-width: 420px) {
-    /* .tech-container {
-        width: 150px;
-        height: 150px;
-        left: -20%;
-    } */
+@media (max-width: 1023px) {
+    .intro-container {
+        left: -12%;
+    }
 }
 
 @media(min-width: 360px) and (max-width: 1024px) {    
@@ -255,12 +284,19 @@
 
 @media (min-width: 360px) and (max-width: 420px) {
     .profile-pic {
-        width: 40%;
-        left: -10%;
-        top: 0;
+        width: 38%;
     }
 
     .tech-container {
-        left: -10%;
+        left: -48px;
+        bottom: 0%;
+    }
+
+    .intro__text {
+        top: 85px;
+    }
+
+    .profile-pic {
+        width: 30%;
     }
 }
