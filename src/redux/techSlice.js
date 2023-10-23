@@ -7,7 +7,8 @@ const initialState = {
     showReact: false,
     showNode:  false,
     showPhp: false,
-    showTechModal: false
+    showTechModal: false,
+    tech: ""
 }
 
 export const techSlice = createSlice({
@@ -82,8 +83,9 @@ export const techSlice = createSlice({
         setTechModal: (state) => {
             state.showTechModal = !(state.showTechModal);
         },
-        openNav: (state) => {
-            
+        setTech: (state, action) => {
+            state.tech = action.payload;
+            console.log("tech: ", state.tech);
         }
     }
 })
@@ -95,6 +97,7 @@ export const {
     setReact,
     setNode,
     setPhp,
-    setTechModal
+    setTechModal,
+    setTech
 } = techSlice.actions;
 export default techSlice.reducer;

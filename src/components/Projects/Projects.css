@@ -1,3 +1,18 @@
+h1, h2, h3 {
+    font-family: 'Exo', sans-serif;
+}
+  
+  p, span, a {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .hello {
+    display: none;
+  }
+
+  .bye {
+    display: block;
+  }
 
 @media (min-width: 1024px) {
     .project {
@@ -12,6 +27,15 @@
 }
 
 @media (max-width: 594px) {
+    .filter-btns {
+      flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+      margin-right: 6%;
+      margin-bottom: 4%;
+    }
+  
     .projects-container {
         flex-direction: column;
     }
@@ -20,5 +44,5 @@
         width: 95%;
         margin-left: auto;
         margin-right: auto;
-    } 
+    }
 }
