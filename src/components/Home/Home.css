@@ -47,7 +47,7 @@
 
 .tech-container h1 {
     position: relative;
-    width: 100%;
+    width: 75%;
     text-align: center;
     transform-origin: center;
     animation: rotate 30s linear infinite;

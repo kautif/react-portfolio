@@ -175,8 +175,8 @@ export default function Projects () {
                             id="icare"
                             projectTitle="iCare Pharmacy"    
                             projectImgSrc="../assets/all_sizes_icare_mockup_trans.png" 
-                            projectLink="https://incandescent-swan-68d171.netlify.app/"
-                            githubLink="https://github.com/kautif/meal_planner"
+                            projectLink="https://www.icarepharmacy.ca"
+                            githubLink=""
                             projectDesc="Small Pharmacy located in Edmonton, AB. Added forms and calendar plugins for users to sign up for vaccinations through the site. Created and formatted blog posts via owner documents" />
                             <div className="flex justify-around mt-7">
                                 <img className="w-16 h-16" src="../assets/html_icon.png" />
