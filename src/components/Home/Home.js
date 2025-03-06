@@ -41,7 +41,7 @@ export default function Home () {
                     }}>JavaScript</h1>
                     <h1 className="text-slate-50 text-3xl cursor-pointer" onClick={() => dispatch(setReact())}>React</h1>
                     <h1 className="text-slate-50 text-3xl cursor-pointer" onClick={() => dispatch(setNode())}>Node</h1>
-                    <h1 className="text-slate-50 text-3xl cursor-pointer" onClick={() => dispatch(setPhp())}>WordPress & PHP</h1>
+                    {/* <h1 className="text-slate-50 text-3xl cursor-pointer" onClick={() => dispatch(setPhp())}>WordPress & PHP</h1> */}
                 </div>
                 {showTechModal && <TechModal />}
             </div>

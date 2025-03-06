@@ -85,6 +85,22 @@ export default function Projects () {
             {
                 // Try giving each project classes corresponding to the techs used. If techs match, show them. Otherwise, hide them. Do this via JS.
                 <div className="flex flex-wrap justify-around projects-container">
+                    <div className={"w-2/5 project html css js react node"}>
+                        <Project
+                            id="vh-history"
+                            projectTitle="Victory History"    
+                            projectImgSrc="../assets/vh_mockups.png" 
+                            projectLink="https://www.victoryhistory.gg"
+                            githubLink="https://github.com/kautif/finished-games-frontend"
+                            projectDesc="One of my friends on Twitch approached me about this idea. A lot of streamers record the what games they have played or want to play in a Google spreadsheet. Visually, its not that appealing and it isn't easy to filter and search through. So, this is a web application for Twitch users to sign up, find games, add them, share their thoughts, ratings and so on. It shows the data of each user in terms in terms of games completed, incomplete, playing, upcoming, any user's games can be sorted in terms of rating, alphabetically or date added. All registered users can be looked up and their games can be filtered by game status and/or name. This project is still in progress but is still worth looking at." />
+                            <div className="flex justify-around mt-7">
+                                <img className="w-16 h-16" src="../assets/html_icon.png" />
+                                <img className="w-16 h-16" src="../assets/css_icon.png" />
+                                <img className="w-16 h-16" src="../assets/js_icon.png" />
+                                <img className="w-16 h-16" src="../assets/react_icon.png" />
+                                <img className="w-16 h-16" src="../assets/node_icon.png" />
+                            </div>
+                    </div>
                     <div className={"w-2/5 project html css js react"}>
                         <Project
                             id="mealplanner"
