@@ -1,6 +1,7 @@
 .main-container {
     position: absolute;
     left: 25%;
+    top: 15%;
     /* overflow-y: hidden; */
 }
 /* .tech-container {

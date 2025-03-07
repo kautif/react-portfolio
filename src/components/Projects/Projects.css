@@ -14,6 +14,10 @@ h1, h2, h3 {
     display: block;
   }
 
+.filter-btns-container {
+  margin-top: 3%;
+}
+
 @media (min-width: 1024px) {
     .project {
         width: 30%;
